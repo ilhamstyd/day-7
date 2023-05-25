@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    background-color: white;
+    padding: 12px 0 12px 55px;
+}
+
+.left-nav{
+    display: flex;
+    align-items: center;
+}
+
+.left-nav ul{
+    display: flex;
+}
+
+.left-nav ul li{
+    list-style-type: none;
+    padding-left: 40px;
+}
+
+.left-nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.left-nav ul li a:hover{
+    color: #313030;
+    font-weight: 700;
+}
+
+.left-nav ul li a.active{
+    color: #313030;
+    font-weight: 700;
+}
+
+.hamburger-active{
+    color: #313030;
+    font-weight: 700;
+}
+
+.right-nav{
+    display: flex;
+    margin-right: 70px;
+    align-items: center;
+}
+
+.right-nav a{
+    text-decoration: none;
+    color: #ffff;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 3px 10px;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.right-nav a:hover {
+    background-color: #F5F5F5;
+    color: #131313;
+    border: 1px solid black;
+}
+
+body{
+    background-color: #dfe2e7;
+}
+.container{
+    margin: 50px;
+    border-radius: 10px;
+    
+}
+
+.card{
+    background-color: #f3f3f3;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px grey;
+}
+
+.left-card{
+    width: 50%;
+    margin: 4% 6%;
+    text-align: justify;
+}
+
+.left-card h1{
+    margin-bottom: 25px;
+}
+
+.cv{
+    margin: 50px 0;
+    
+}
+
+#contact{
+    color: #fff;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 3px 20px;
+    font-weight: 300;
+    margin-right: 20px;
+}
+
+#contact:hover{
+    background-color: #F5F5F5;
+    color: #131313;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px #dbdbdb;
+    font-weight: 500;
+}
+
+.cv a{
+    text-decoration: none;
+    color: #000;
+}
+
+.icon{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.icon a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    border-radius: 100%;
+    padding: 3px 8px;
+    margin-right: 20px;
+}
+
+.icon a:hover{
+    background-color: #F5F5F5;
+    color: #131313;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px #dbdbdb;
+}
+
+.right-card{
+    margin: 5% auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #cacaca;
+}
+
+.right-card img{
+    width: 300px;
+    height: 370px;
+}
+
+.right-card h3{
+    text-align: center;
+}
+
+.right-card p{
+    text-align: center;
+    padding-bottom: 7px;
+}
+
+/* hamburger menu */
+#barsmenu {
+    display: none;
+  }
+  
+  .hamburger-nav-container {
+    font-size: small;
+    list-style-type: none;
+    display: none;
+  }
+  
+  .hamburger-nav-container a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #9a9a9a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #fff;
+  }
+  
+  .hamburger-nav-container .hamburger-active {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(28, 27, 27);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #fff;
+  }
+  
+  /* responsive */
+  @media only screen and (max-width: 900px) {
+    .left-card {
+      font-size: small;
+    }
+    .right-card{
+        font-size: small;
+        transition: 0.5s ease-out;
+    }
+    .right-card img{
+        width: 250px;
+        height: 350px;
+        transition: 0.3s;
+    }
+}
+
+    @media only screen and (max-width: 765px){
+        .right-nav{
+            margin-right: 30px;
+        }
+        .card{
+            flex-direction: column;
+        }
+        .left-card{
+            width: auto;
+        }
+        .left-card h1{
+            text-align: center;
+        }
+        .icon{
+            justify-content: center;
+        }
+
+    }
+
+    @media only screen and (max-width: 660px){
+        #barsmenu{
+            display: block;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .container{
+            margin: 20px;
+        }
+        .left-card h1{
+            font-size: large;
+        }
+        .left-nav ul li{
+            display: none;
+        }
+        .right-nav{
+            display: none;
+        }
+        .left-nav img{
+            display: none;
+        }
+        .nav-right button{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    }
+  
